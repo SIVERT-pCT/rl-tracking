@@ -1,0 +1,62 @@
+{
+    "dataset": {
+        "cluster_threshold": 2,
+        "directory": "data/experiment_default_data_water",
+        "filter_secondaries": false,
+        "skip_tracker": false,
+        "test_events": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            100,
+            150,
+            200
+        ],
+        "test_files": {
+            "water100": "data/water_100_10k.npz",
+            "water150": "data/water_150_10k.npz",
+            "water200": "data/water_200_10k.npz"
+        },
+        "train_events": 100,
+        "train_file": "data/no_phantom_10k.npz"
+    },
+    "model": {
+        "actor_critic": {
+            "act_size": 120,
+            "embedding_size": 128,
+            "enc_type": "PE-ARF",
+            "obs_size": 56,
+            "pomdp": false,
+            "sim_scaling": 100,
+            "use_act_enc": true
+        },
+        "embedding_net": {
+            "embedding_dim": 64,
+            "node_features": 53
+        },
+        "model_dir": "models/experiment_default_rl"
+    },
+    "run": {
+        "num_runs": 15,
+        "num_steps": 1000
+    },
+    "agent": {
+        "batch_size": 512,
+        "clip_p": 0.2,
+        "clip_v": 0.2,
+        "e_loss_scale": 0.001,
+        "embedding_type": "act",
+        "epochs": 8,
+        "gae_alpha": 1.0,
+        "gae_gamma": 0.99,
+        "gae_lambda": 0.95,
+        "gamma": 1.0,
+        "lr": 1e-05,
+        "reward_norm": true,
+        "step": 5000,
+        "tensorboard": true,
+        "v_loss_scale": 1
+    }
+}

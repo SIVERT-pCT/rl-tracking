@@ -1,0 +1,55 @@
+{
+    "dataset": {
+        "cluster_threshold": 2,
+        "directory": "data/experiment_default_data_head_spots",
+        "filter_secondaries": false,
+        "skip_tracker": false,
+        "test_events": [
+            50,
+            100,
+            150
+        ],
+        "test_files": {
+            "head_phantom_spot": "data/head_filtered_2k_spot.npz"
+        },
+        "train_events": 100,
+        "train_file": "data/no_phantom_10k.npz"
+    },
+    "model": {
+        "actor_critic": {
+            "act_size": 120,
+            "embedding_size": 128,
+            "enc_type": "PE-ARF",
+            "obs_size": 56,
+            "pomdp": false,
+            "sim_scaling": 100,
+            "use_act_enc": true
+        },
+        "embedding_net": {
+            "embedding_dim": 64,
+            "node_features": 53
+        },
+        "model_dir": "models/experiment_default_rl"
+    },
+    "run": {
+        "num_runs": 5,
+        "num_steps": 1000
+    },
+    "agent": {
+        "batch_size": 512,
+        "clip_p": 0.2,
+        "clip_v": 0.2,
+        "e_loss_scale": 0.001,
+        "embedding_type": "act",
+        "epochs": 8,
+        "gae_alpha": 1.0,
+        "gae_gamma": 0.99,
+        "gae_lambda": 0.95,
+        "gamma": 1.0,
+        "lr": 1e-05,
+        "reward_norm": true,
+        "step": 5000,
+        "tensorboard": true,
+        "v_loss_scale": 1.0
+    }
+}

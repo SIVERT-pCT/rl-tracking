@@ -1,0 +1,49 @@
+{
+    "dataset": {
+        "cluster_threshold": 2,
+        "directory": "data/experiment_ablation_data",
+        "filter_secondaries": false,
+        "skip_tracker": false,
+        "test_events": [
+            10,
+            20,
+            30,
+            40,
+            50,
+            100,
+            150,
+            200
+        ],
+        "test_files": {
+            "water100": "data/water_100_10k.npz",
+            "water150": "data/water_150_10k.npz",
+            "water200": "data/water_200_10k.npz"
+        },
+        "train_events": 100,
+        "train_file": "data/no_phantom_10k.npz"
+    },
+    "model": {
+        "actor_critic": {
+            "act_size": 120,
+            "embedding_size": 128,
+            "enc_type": "PE-ARF",
+            "obs_size": 56,
+            "pomdp": false,
+            "sim_scaling": 100,
+            "use_act_enc": true
+        },
+        "embedding_net": {
+            "embedding_dim": 64,
+            "node_features": 53
+        },
+        "model_dir": "models/experiment_supervised"
+    },
+    "run": {
+        "num_runs": 15,
+        "num_steps": 10000
+    },
+    "optimizer": {
+        "batch_size": 128,
+        "lr": 1e-5
+    }
+}
