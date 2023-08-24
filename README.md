@@ -61,14 +61,15 @@ python generate_tables.py
 If you find this repository useful for your research, please cite the following work.
 
 ```
-@article{Kortus2023,
-author = "Tobias Kortus and Ralf Keidel and Nicolas R. Gauger",
-title = "{Towards Neural Charged Particle Tracking in Digital Tracking Calorimeters with Reinforcement Learning}",
-year = "2023",
-month = "1",
-url = "https://www.techrxiv.org/articles/preprint/Towards_Neural_Charged_Particle_Tracking_in_Digital_Tracking_Calorimeters_with_Reinforcement_Learning/21717323",
-doi = "10.36227/techrxiv.21717323"
-}
+@ARTICLE{10219056,
+  author={Kortus, Tobias and Keidel, Ralf and Gauger, Nicolas R. and on behalf of the Bergen pCT collaboration},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Towards Neural Charged Particle Tracking in Digital Tracking Calorimeters with Reinforcement Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-14},
+  doi={10.1109/TPAMI.2023.3305027}}
 ```
 
 ## References
