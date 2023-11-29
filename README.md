@@ -62,13 +62,13 @@ If you find this repository useful for your research, please cite the following 
 
 ```
 @ARTICLE{10219056,
-  author={Kortus, Tobias and Keidel, Ralf and Gauger, Nicolas R. and on behalf of the Bergen pCT collaboration},
+  author={Kortus, Tobias and Keidel, Ralf and Gauger, Nicolas R. and Bergen pCT Collaboration},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title={Towards Neural Charged Particle Tracking in Digital Tracking Calorimeters with Reinforcement Learning}, 
+  title={Towards Neural Charged Particle Tracking in Digital Tracking Calorimeters With Reinforcement Learning}, 
   year={2023},
-  volume={},
-  number={},
-  pages={1-14},
+  volume={45},
+  number={12},
+  pages={15820-15833},
   doi={10.1109/TPAMI.2023.3305027}}
 ```
 
